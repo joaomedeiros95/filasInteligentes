@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<widget xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="UFRN" name="display_fila" version="0.1.0">
+
+    <details>
+        <title>Display Fila</title>
+        <homepage>https://github.com/joaomedeiros95/filasInteligentes</homepage>
+        <authors>João Eduardo Medeiros</authors>
+        <email>joaoribeiromedeiros@gmail.com</email>
+        <image></image>
+        <smartphoneimage></smartphoneimage>
+        <description>Widget para mostrar a posição atual da fila de um estabelecimento.</description>
+        <longdescription>DESCRIPTION.md</longdescription>
+        <changelog>doc/changelog.md</changelog>
+        <doc>doc/userguide.md</doc>
+        <license>MIT</license>
+        <issuetracker>https://github.com/joaomedeiros95/filasInteligentes/issues</issuetracker>
+    </details>
+
+    <requirements>
+    </requirements>
+
+    <preferences>
+    </preferences>
+
+    <wiring>
+    </wiring>
+
+    <contents src="index.html"/>
+    <rendering height="300px" width="30%"/>
+
+</widget>

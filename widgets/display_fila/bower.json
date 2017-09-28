@@ -1,0 +1,12 @@
+{
+  "name": "display_fila",
+  "dependencies": {
+    "jquery": null
+  },
+  "devDependencies": {},
+  "exportsOverride": {
+    "jquery": {
+      "js": "dist/jquery.min.js"
+    }
+  }
+}

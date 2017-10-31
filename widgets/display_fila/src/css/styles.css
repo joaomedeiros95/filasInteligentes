@@ -1,0 +1,15 @@
+body {
+	background: black;
+	text-align: center;
+}
+
+#title {
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#posicao-fila {
+	font-size: 45px;
+	color: red;
+}

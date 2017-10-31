@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<widget xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="UFRN" name="display_fila" version="0.1.0">
+<widget xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="UFRN" name="display_fila" version="0.1.2">
 
     <details>
         <title>Display Fila</title>
@@ -17,9 +17,11 @@
     </details>
 
     <requirements>
+        <feature name="NGSI" />
     </requirements>
 
     <preferences>
+        <preference name="ngsi_server" type="text" label="NGSI server URL" description="URL of the Orion Context Broker to use for retrieve entity information" default="http://10.7.40.55:1026/" />
     </preferences>
 
     <wiring>

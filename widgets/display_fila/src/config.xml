@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<widget xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="UFRN" name="display_fila" version="0.1.2">
+<widget xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="UFRN" name="display_fila" version="0.1.3.3">
 
     <details>
         <title>Display Fila</title>
@@ -25,6 +25,7 @@
     </preferences>
 
     <wiring>
+        <inputendpoint name="entityInput" type="text" label="Entidade Clínica" description="Recebe a clínica para mostrar no display" friendcode="clinica_entity" />
     </wiring>
 
     <contents src="index.html"/>

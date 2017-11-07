@@ -40,27 +40,12 @@ var DisplayFila = (function () {
         use_user_fiware_token: false
     }
 
-	function getEntities() {
-		MashupPlatform.http.makeRequest('http://35.199.67.193:1026/v1/contextEntities/clinica_fila_unica/attributes/posicaoAtual', {
-		    method: "GET",
-		    contentType: "application/json",
-		    onSuccess: function (response) {
-		    	let responseJSON = JSON.parse(response.response);
-		       	let posicaoAtual = responseJSON.attributes[0].value;
-		       	console.log(posicaoAtual);
-		       	document.getElementById("posicao-fila").innerHTML = posicaoAtual;
-		    },
-		    onFailure: function (response) {
-		        // Something went wrong
-		    },
-		    onComplete: function () {
-		    	setTimeout(getEntities, 100);
-		    }
-		});
-	}
-
-	getEntities();
+    MashupPlatform.wiring.registerCallback('entityInput', function(entity) {
+        console.log(entity);
+        let responseJSON = JSON.parse(entity);
+        let posicaoAtual = responseJSON.posicaoAtual;
+        document.getElementById("posicao-fila").innerHTML = posicaoAtual;
+    });
 
     return DisplayFila;
-
 })();
